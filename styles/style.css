@@ -1,44 +1,26 @@
-body{
+body {
     background-color: #0E1323 !important;
 }
 
-.tcw{
-    color: white !important;
-}
+.tcw {color: white !important;}
 
-.bg1{
-    background-color: #FF8B64 !important;
-}
+.bg1 {background-color: #FF8B64 !important;}
 
-.bg2{
-    background-color: #55C2E6 !important;
-}
+.bg2 {background-color: #55C2E6 !important;}
 
-.bg3{
-    background-color: #FF5E7D !important;
-}
+.bg3 {background-color: #FF5E7D !important;}
 
-.bg4{
-    background-color: #4BCF82 !important;
-}
+.bg4 {background-color: #4BCF82 !important;}
 
-.bg5{
-    background-color: #7335D2 !important;
-}
+.bg5 {background-color: #7335D2 !important;}
 
-.bg6{
-    background-color: #F1C75B !important;
-}
+.bg6 {background-color: #F1C75B !important;}
 
-.bgCR{
-    background-color: #1C204B !important;
-}
+.bgCR {background-color: #1C204B !important;}
 
-.bgLC{
-    background-color: #5747EA !important;
-}
+.bgLC {background-color: #5747EA !important;}
 
-.cr{
+.cr {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -55,56 +37,64 @@ body{
     text-align: center;
 }
 
-.mgT{
+.mgT {
     margin-top: 80px;
 }
 
-.mg2{
+.mg2 {
     margin-top: 200px;
 }
 
-.mt3{
-    margin-top: 10px;
+.mt3 {
+    margin-top: 0px;
 }
 
-.gp{
+.gp {
     gap: 30px;
 }
 
-.cl3{
-    width: 25% !important;
-    box-sizing: border-box !important;
+.cl3-1 {
+    grid-column: span 2;
 }
 
-.cl3-1{
-    width: 25% !important;
-    box-sizing: border-box !important;
-}
-
-.cl8{
-    width: 66.66% !important;
-    box-sizing: border-box !important;
-}
-
-.clo1{
+.clo1 {
     width: 100%;
 }
 
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+
+.card {
+    width: 100%;
+}
+
+.Jr-ic{
+    width: 10%;
+}
+
 @media (max-width: 1000px) {
-    .cl3{
-        width:100% !important;
+    .cards-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
     }
-    .cl3-1{
-        width: 100% !important;
+
+    .cl3-1 {
+        grid-column: span 1;
     }
-    .cl8{
-        width:100% !important;
+    
+    .cr {
+        width: 100%;
     }
-    .container{
-        margin-right:auto !important;
-        margin-left: auto !important;
+    
+    .clo1 {
+        width: 100%;
     }
-    .clo1{
-        width: 33%;
-    }
+
+    .mt3{
+        margin-top: 10px;
+    }    
 }
