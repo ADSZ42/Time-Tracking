@@ -1,100 +1,159 @@
-body {
-    background-color: #0E1323 !important;
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+  gap: 30px;
+  padding: 20px;
 }
 
-.tcw {color: white !important;}
-
-.bg1 {background-color: #FF8B64 !important;}
-
-.bg2 {background-color: #55C2E6 !important;}
-
-.bg3 {background-color: #FF5E7D !important;}
-
-.bg4 {background-color: #4BCF82 !important;}
-
-.bg5 {background-color: #7335D2 !important;}
-
-.bg6 {background-color: #F1C75B !important;}
-
-.bgCR {background-color: #1C204B !important;}
-
-.bgLC {background-color: #5747EA !important;}
-
-.cr {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
+.cntr-grd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    text-align: center;
+
+.big-card {
+  padding: 20px;
+  display: flex;
+  align-items: end;
+  height: 518px;
+  width: 255px;
+  color: #fff;
+  border-radius: 8px;
+  position: relative; 
 }
 
-.mgT {
-    margin-top: 80px;
-}
-
-.mg2 {
-    margin-top: 200px;
-}
-
-.mt3 {
-    margin-top: 0px;
-}
-
-.gp {
-    gap: 30px;
-}
-
-.cl3-1 {
-    grid-column: span 2;
-}
-
-.clo1 {
-    width: 100%;
-}
-
-.cards-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    margin-top: 50px;
+.small-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
 }
 
 .card {
-    width: 100%;
+  width: 255px;
+  height: 244px;
+  padding: 15px;
+  text-align: left;
+  border-radius: 8px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
 }
 
-.Jr-ic{
-    width: 10%;
+.card-content {
+  position: relative;
+  padding: 10px;
+  text-align: left;
 }
 
-@media (max-width: 1000px) {
-    .cards-grid {
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
-    }
-
-    .cl3-1 {
-        grid-column: span 1;
-    }
-    
-    .cr {
-        width: 100%;
-    }
-    
-    .clo1 {
-        width: 100%;
-    }
-
-    .mt3{
-        margin-top: 10px;
-    }    
+.overlay-small-card, .overlay-large-card {
+  position: absolute;
+  width: 255px;
+  color: white !important;
+  border-radius: 8px;
 }
+
+.overlay-small-card {
+  height: 185px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 29px;
+}
+
+.overlay-large-card {
+  height: 354px; 
+  left: 0;
+  right: 0;
+  top: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 34px;
+}
+
+.text-button1, .text-button2, .text-button3 {
+  all: unset;
+  display: inline;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.text-button1:hover, .text-button2:hover, .text-button3:hover {
+  color: #fff;
+}
+
+.text-container {
+  display: flex; 
+  justify-content: space-between; 
+  width: 100%;
+}
+
+
+.imgRS{
+  width: 78px;
+  height:78px;
+}
+
+.bgimRs1{
+  position: absolute;
+  top: calc(50% - 35px);
+  right: 18px;
+  transform-origin: center;
+  width: 78px;
+  height: 78px;
+}
+
+.bgimRs2{
+  position: absolute;
+  top: calc(50% - 25px);
+  right: 18px;
+  transform-origin: center;
+}
+
+.bgimRs3{
+  position: absolute;
+  top: calc(50% - 35px);
+  right: 18px;
+  transform-origin: center;
+}
+
+.bgimRs4{
+  position: absolute;
+  top: calc(50% - 25px);
+  right: 18px;
+  transform-origin: center;
+}
+
+.bgimRs5{
+  position: absolute;
+  top: calc(50% - 40px);
+  right: 18px;
+  transform-origin: center;
+}
+
+.bgimRs6{
+  position: absolute;
+  top: calc(50% - 35px);
+  right: 18px;
+  transform-origin: center;
+}
+
+
+.spCl{
+  color: #BBC0FF;
+}
+
+.bg1 { background-color: #FF8B64 !important; }
+.bg2 { background-color: #55C2E6 !important; }
+.bg3 { background-color: #FF5E7D !important; }
+.bg4 { background-color: #4BCF82 !important; }
+.bg5 { background-color: #7335D2 !important; }
+.bg6 { background-color: #F1C75B !important; }
+.bgCR { background-color: #1C204B !important; }
+.bgLC { background-color: #5747EA !important; }

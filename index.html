@@ -20,84 +20,125 @@
 
 <body>
 
-  <div class="container cr mt3">
+  <div class="cntr-grd">
+    <div class="grid-container">
+  
+      <div class="big-card bgCR">
+        <div class="card-content">
+          <button class="text-button1 clo1 spCl" id="dayBtn">Daily</button>
+          <br>
+          <button class="text-button2 clo1 spCl" id="weekBtn">Weekly</button>
+          <br>
+          <button class="text-button3 clo1 spCl" id="monthBtn">Monthly</button>
+        </div>
 
-    <div class="card bgLC tcw cl3-1 mt3">
-      <div></div>
-      <img src="./Assets/images/image-jeremy.png" alt="" class="Jr-ic">
-      <br>
-      <p>Report For:</p>
-      <h2>Jeremy Robinson</h2>
-      <div class="card-body tcw bgCR mg2">
-        <br><br>
-        <p class="clo1">Daily</p>
-        <p class="clo1">Weekly</p>
-        <p class="clo1">Monthly</p>
+        <div class="overlay-large-card bgLC">
+          <img src="./Assets/images/image-jeremy.png" alt="" class="imgRS">
+          <br>
+          <br>
+          <br>
+          <P class="spCl">report for</P>
+          <h1>Jeremy Robson</h1>
+        </div>
+      </div>
+
+
+      <div class="small-cards">
+        <div class="card bg1">
+          <div class="card-content">
+            <img src="./Assets/images/icon-work.svg" alt="" class="bgimRs1">
+          </div>
+          
+          <div class="overlay-small-card bgCR">
+            <div class="text-container">
+              <h5 class="left-text">Work</h5>
+              <h5 class="right-text">...</h5>
+            </div>
+            <h1 id="WorkC">#hrs</h1>
+            <p class="spCl" id="WorkP">Last Week - #hrs</p>
+          </div>
+        </div>
+  
+        <div class="card bg2">
+          <div class="card-content">
+            <img src="./Assets/images/icon-play.svg" alt="" class="bgimRs2">
+          </div>
+          
+          <div class="overlay-small-card bgCR">
+            <div class="text-container">
+              <h5>Play</h5>
+              <h5>...</h5>
+            </div>
+            <h1 id="PlayC">#hrs</h1>
+            <p class="spCl" id="PlayP">Last Week - #hrs</p>
+          </div>
+        </div>
+  
+        <div class="card bg3">
+          <div class="card-content">
+            <img src="./Assets/images/icon-study.svg" alt="" class="bgimRs3">
+          </div>
+          
+          <div class="overlay-small-card bgCR">
+            <div class="text-container">
+              <h5>Study</h5>
+              <h5>...</h5>
+            </div>
+            <h1 id="StudyC">#hrs</h1>
+            <p class="spCl" id="StudyP">Last Week - #hrs</p>
+          </div>
+        </div>
+  
+        <div class="card bg4">
+          <div class="card-content bg">
+            <img src="./Assets/images/icon-exercise.svg" alt="" class="bgimRs4">
+          </div>
+          
+          <div class="overlay-small-card bgCR">
+            <div class="text-container">
+              <h5>Exercise</h5>
+              <h5>...</h5>
+            </div>
+            <h1 id="ExerC">#hrs</h1>
+            <p class="spCl" id="ExerP">Last Week - #hrs</p>
+          </div>
+        </div>
+  
+        <div class="card bg5">
+          <div class="card-content">
+            <img src="./Assets/images/icon-social.svg" alt="" class="bgimRs5">
+          </div>
+          
+          <div class="overlay-small-card bgCR">
+            <div class="text-container">
+              <h5>Social</h5>
+              <h5>...</h5>
+            </div>
+            <h1 id="SociC">#hrs</h1>
+            <p class="spCl" id="SociP">Last Week - #hrs</p>
+          </div>
+        </div>
+  
+        <div class="card bg6">
+          <div class="card-content">
+            <img src="./Assets/images/icon-self-care.svg" alt="" class="bgimRs6">
+          </div>
+          
+          <div class="overlay-small-card bgCR">
+            <div class="text-container">
+              <h5>Self Care</h5>
+              <h5>...</h5>
+            </div>
+            <h1 id="SelfC">#hrs</h1>
+            <p class="spCl" id="SelfP">Last Week - #hrs</p>
+          </div>
+        </div>
       </div>
     </div>
+  </div>  
 
-    <div class="cards-grid">
-      <div class="card bg1 cl3">
-        <div class="card-body tcw bgCR mgT">
-          <h5>Work</h5>
-          <h2 id="WorkC">32hrs</h2>
-          <p id="WorkP">Last Week - 36hrs</p>
-        </div>
-      </div>
 
-      <div class="card bg2 cl3">
-        <div class="card-body tcw bgCR mgT">
-          <h5>Play</h5>
-          <h2 id="PlayC">10hrs</h2>
-          <p id="PlayP">Last Week - 8hrs</p>
-        </div>
-      </div>
 
-      <div class="card bg3 cl3">
-        <div></div>
-        <div class="card-body tcw bgCR mgT">
-          <h5>Study</h5>
-          <h2 id="StudyC">4hrs</h2>
-          <p id="StudyP">Last Week - 7hrs</p>
-        </div>
-      </div>
-
-      <div class="card bg4 cl3">
-        <div></div>
-        <div class="card-body tcw bgCR mgT">
-          <h5>Exercise</h5>
-          <h2 id="ExerC">4hrs</h2>
-          <p id="ExerP">Last Week - 5hrs</p>
-        </div>
-      </div>
-
-      <div class="card bg5 cl3">
-        <div></div>
-        <div class="card-body tcw bgCR mgT">
-          <h5>Social</h5>
-          <h2 id="SociC">4hrs</h2>
-          <p id="SociP">Last Week - 4hrs</p>
-        </div>
-      </div>
-
-      <div class="card bg6 cl3">
-        <div></div>
-        <div class="card-body tcw bgCR mgT">
-          <h5>Self Care</h5>
-          <h2 id="SelfC">2hrs</h2>
-          <p id="SelfP">Last Week - 2hrs</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <footer>
-    <div class="attribution footer">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Anthony Duran</a>.
-    </div>
-  </footer>
   <script src="./scripts/app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
