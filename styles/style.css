@@ -1,3 +1,10 @@
+body{
+  background-color: #0E1323 !important;
+  font-family: 'Rubik', sans-serif !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 .grid-container {
   display: grid;
   grid-template-columns: auto 1fr;
