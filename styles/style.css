@@ -73,6 +73,10 @@ body{
   padding-top: 29px;
 }
 
+.overlay-small-card:hover {
+  filter: brightness(1.5);
+}
+
 .overlay-large-card {
   height: 354px; 
   left: 0;
@@ -164,3 +168,65 @@ body{
 .bg6 { background-color: #F1C75B !important; }
 .bgCR { background-color: #1C204B !important; }
 .bgLC { background-color: #5747EA !important; }
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .small-cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+  }
+
+  .big-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .overlay-small-card, .overlay-large-card {
+    width: 100%;
+  }
+
+  .imgRS {
+    width: 64px;
+    height: 64px;
+  }
+
+  .text-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-button1, .text-button2, .text-button3 {
+    font-size: 14px;
+  }
+  .cntr-grd {
+    align-items: start;
+    height: 100vh;
+  }
+  .T-RF{
+    font-size: 10px;
+  }
+  .T-JR{
+    font-size: 20px;
+  }
+  .card{
+    width: 327px;
+    height: 160px;
+  }
+  .big-card{
+    height: 203px;
+  }
+  .overlay-large-card{
+    width: 327px;
+    height: 133px;
+  }
+  .arr-inf{
+    flex-direction: row;
+  }
+}
