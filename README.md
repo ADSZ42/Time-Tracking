@@ -5,9 +5,9 @@ Anthony Duran
 
 Author comments: I was unable to get the responsiveness done.
 
-Peer Reviewed By: 
+Peer Reviewed By: Josue Rosales
 
-Comment: 
+Comment: The Code works and the desktop looks very similar to the reqirement as needed. Unfortunately, the page is not responsive. But other than that, just about everything is good.
 
 ____________________________________________________________________________________________________________
 
